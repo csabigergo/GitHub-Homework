@@ -1,2 +1,4 @@
-FROM nginx:stable-alpine3.23-perl
-RUN apt-get update && apt-get install -y nginx
+FROM nginx:latest
+COPY index.html /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "daemon off;"]
