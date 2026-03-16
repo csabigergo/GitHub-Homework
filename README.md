@@ -2,14 +2,14 @@ GithHub-Homework dokumentáció
 
 Először is létre lett hozva egy .yml file, ami Homework néven fut, és akkor futtatja le a workflowt ha a push történik a main branchen
 
-'''
+"""
 name: Homework
 
 on:
   push:
     branches:
       - main
-'''
+"""
 
 Ezután definiálva lettek a beépített jobok, amik először is egy ubuntu alapot vesz alapul, majd végrehajt egy checkout művletet a repositoryból
 '''
